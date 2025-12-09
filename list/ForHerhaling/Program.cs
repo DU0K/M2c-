@@ -4,6 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
+        Program program = new Program();
+        program.run();
+    }
+
+    internal void run()
+    {
         double[] prijzen = new double[] { 2.50, 3.75, 1.20, 4.00 };
         string[] artiekelen = {"Brood", "Melk", "Kaas", "Eieren" };
         Formulier[] formulieren = new Formulier[2];
@@ -36,4 +42,6 @@ class Program
         internal string Feedback { get; set; }
 
     }
+
+
 }
